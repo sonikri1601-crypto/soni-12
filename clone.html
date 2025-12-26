@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Hindi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,6 +128,9 @@
         document.getElementById('msg').textContent = 'Enter your email for reset link.';
         document.getElementById('msg').className = 'error';
         return;
+
+
+        
       }
       auth.sendPasswordResetEmail(email)
         .then(() => {
